@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<h2> Welcome to Amarachi Jack Form Template</h2>
+		</header>
+		<main>
+			<p>Kindly fill the registration Form with your details</p>
+			<form>
+				<fieldset>
+					<legend>Your address</legend>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="First Name">First Name</label>
+						</div>
+						<input type="text" id="First Name" />
+					</div>
+					<div class="input__group">
+						<div class="label">
+							<label for="Last Name">Last Name</label>
+						</div>
+						<input type="text" id="Last Name" />
+					</div>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="Street">Street</label>
+						</div>
+						<input type="text" id="Street" />
+					</div>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="City">City</label>
+						</div>
+						<input type="text" id="City" multiple />
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Additional details</legend>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="Biography">Biography</label>
+						</div>
+						<textarea name="" id="Biography" cols="20" rows="3"></textarea>
+					</div>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="Image">Image</label>
+						</div>
+						<input type="file" id="Image" />
+					</div>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="Age_Group">Age Group</label>
+						</div>
+						<select name="Age_Group" id="Age_Group">
+							<option value="0-9 Years">0-9 Years</option>
+							<option value="10-19 Years"> 10-19 Years</option>
+							<option value="20-29 Years"> 20-29 Years</option>
+							<option value="30 Years and Above "> 30 Years and Above</option>
+						</select>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Interests</legend>
+					<div class="input__group">
+						<div class="label">
+							<label for="Hobbies">Hobbies</label>
+						</div>
+						<textarea name="" rows="4" id="Hobbies" class="Hobbies">Playing Soccer&#13;&#10;Dancing&#13;&#10;Gardening&#13;&#10;Watching Movies
+					</textarea
+						>
+					</div>
+					<div class="input__group">
+						<div class="label">
+							<label for="Favorite_Car?">Favorite Car?</label>
+						</div>
+						<select name="Favorite_Car?" id="Favorite_Car?">
+							<option value="Volvo">Volvo</option>
+							<option value="Honda">Honda</option>
+							<option value="Maybach">Maybach</option>
+							<option value="BMW">BMW</option>
+							<option value="Range Rover">Range Rover</option>
+						</select>
+					</div>
+
+					<div class="input__group">
+						<div class="label">
+							<label for="transport">Favorite Public Transport</label>
+						</div>
+						<select name="" id="transport" multiple>
+							<optgroup label="Ground">
+								<option value="Train">Train</option>
+								<option value="Bus">Bus</option>
+							</optgroup>
+							<optgroup label="Water"></optgroup>
+						</select>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Code injected by live-server -->
+		<script>
+			// <![CDATA[  <-- For SVG support
+			if ("WebSocket" in window) {
+				(function () {
+					function refreshCSS() {
+						var sheets = [].slice.call(document.getElementsByTagName("link"));
+						var head = document.getElementsByTagName("head")[0];
+						for (var i = 0; i < sheets.length; ++i) {
+							var elem = sheets[i];
+							var parent = elem.parentElement || head;
+							parent.removeChild(elem);
+							var rel = elem.rel;
+							if (
+								(elem.href && typeof rel != "string") ||
+								rel.length == 0 ||
+								rel.toLowerCase() == "stylesheet"
+							) {
+								var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+								elem.href =
+									url +
+									(url.indexOf("?") >= 0 ? "&" : "?") +
+									"_cacheOverride=" +
+									new Date().valueOf();
+							}
+							parent.appendChild(elem);
+						}
+					}
+					var protocol =
+						window.location.protocol === "http:" ? "ws://" : "wss://";
+					var address =
+						protocol + window.location.host + window.location.pathname + "/ws";
+					var socket = new WebSocket(address);
+					socket.onmessage = function (msg) {
+						if (msg.data == "reload") window.location.reload();
+						else if (msg.data == "refreshcss") refreshCSS();
+					};
+					if (
+						sessionStorage &&
+						!sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+					) {
+						console.log("Live reload enabled.");
+						sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+					}
+				})();
+			} else {
+				console.error(
+					"Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+				);
+			}
+			// ]]>
+		</script>
+		<!-- Code injected by live-server -->
+		<script>
+			// <![CDATA[  <-- For SVG support
+			if ("WebSocket" in window) {
+				(function () {
+					function refreshCSS() {
+						var sheets = [].slice.call(document.getElementsByTagName("link"));
+						var head = document.getElementsByTagName("head")[0];
+						for (var i = 0; i < sheets.length; ++i) {
+							var elem = sheets[i];
+							var parent = elem.parentElement || head;
+							parent.removeChild(elem);
+							var rel = elem.rel;
+							if (
+								(elem.href && typeof rel != "string") ||
+								rel.length == 0 ||
+								rel.toLowerCase() == "stylesheet"
+							) {
+								var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+								elem.href =
+									url +
+									(url.indexOf("?") >= 0 ? "&" : "?") +
+									"_cacheOverride=" +
+									new Date().valueOf();
+							}
+							parent.appendChild(elem);
+						}
+					}
+					var protocol =
+						window.location.protocol === "http:" ? "ws://" : "wss://";
+					var address =
+						protocol + window.location.host + window.location.pathname + "/ws";
+					var socket = new WebSocket(address);
+					socket.onmessage = function (msg) {
+						if (msg.data == "reload") window.location.reload();
+						else if (msg.data == "refreshcss") refreshCSS();
+					};
+					if (
+						sessionStorage &&
+						!sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+					) {
+						console.log("Live reload enabled.");
+						sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+					}
+				})();
+			} else {
+				console.error(
+					"Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+				);
+			}
+			// ]]>
+		</script>
+		<!-- Code injected by live-server -->
+		<script>
+			// <![CDATA[  <-- For SVG support
+			if ("WebSocket" in window) {
+				(function () {
+					function refreshCSS() {
+						var sheets = [].slice.call(document.getElementsByTagName("link"));
+						var head = document.getElementsByTagName("head")[0];
+						for (var i = 0; i < sheets.length; ++i) {
+							var elem = sheets[i];
+							var parent = elem.parentElement || head;
+							parent.removeChild(elem);
+							var rel = elem.rel;
+							if (
+								(elem.href && typeof rel != "string") ||
+								rel.length == 0 ||
+								rel.toLowerCase() == "stylesheet"
+							) {
+								var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+								elem.href =
+									url +
+									(url.indexOf("?") >= 0 ? "&" : "?") +
+									"_cacheOverride=" +
+									new Date().valueOf();
+							}
+							parent.appendChild(elem);
+						}
+					}
+					var protocol =
+						window.location.protocol === "http:" ? "ws://" : "wss://";
+					var address =
+						protocol + window.location.host + window.location.pathname + "/ws";
+					var socket = new WebSocket(address);
+					socket.onmessage = function (msg) {
+						if (msg.data == "reload") window.location.reload();
+						else if (msg.data == "refreshcss") refreshCSS();
+					};
+					if (
+						sessionStorage &&
+						!sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+					) {
+						console.log("Live reload enabled.");
+						sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+					}
+				})();
+			} else {
+				console.error(
+					"Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+				);
+			}
+			// ]]>
+		</script>
+	</body>
+</html>
