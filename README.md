@@ -6,14 +6,14 @@ This form will collect details of various candidates showing their interest, tra
 
 - [Form-Candidate Personal Details](#form-candidatepersonaldetails)
 - [Table of Content](#tableofcontent)
-- [Project Task](#projecttask)
-- [Links](#links)
-- [My Process](#myProcess)
-- [Built With](#builtwith)
-- [What I learned](#whatilearned)
-- [Useful Resources](#usefulresources)
-- [Author](#Author)
-- [Acknowledgement](#acknowledgement)
+    - [Project Task](#projecttask)
+    - [Links](#links)
+    - [My Process](#myProcess)
+        - [Built With](#builtwith)
+        - [What I learned](#whatilearned)
+        - [Useful Resources](#usefulresources)
+        - [Author](#Author)
+        - [Acknowledgement](#acknowledgement)
 
 ### Project Task
 
